@@ -33,6 +33,9 @@ weighting is then assigned to each match to either find the best possible
 unique match (providing identical results to V4) or to find the probability
 distribution of all of the matches.
 
+Full Doxygen documentation is available for both versions of the code in the
+docs folder. Additionally, version 5 and all its dependencies adhere to PEP8
+style guidelines.
 
 <a name="depend_anchor"></a>
 Dependencies
