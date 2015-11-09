@@ -27,7 +27,6 @@ from pycymatch_match2 import scale_matrix
 #
 #  @param[in] matrix: 3D Mass-observable matrix.
 #  @param[in] hm_matrix: Mass vs z matrix.
-#  @param[in] mass_hist: Halo mass histograms.
 #  @param[in] ranges: Mass-observable ranges.
 #  @param[in] opts: List of arguments.
 #
@@ -97,7 +96,11 @@ def mass_obs(matrix, z_bin, opts, page):
 #  Plot n(L|M) distribution.
 #
 #  @param[in] matrix: Mass-observable matrix.
+#  @param[in] hm_matrix: Mass vs z matrix.
+#  @param[in] ranges: Mass-observable ranges.
+#  @param[in] loop_i: Loop element i.
 #  @param[in] opts: List of arguments.
+#  @param[in] page: PdfPages file.
 #
 def n_lambda(matrix, hm_matrix, ranges, loop_i, opts, page):
 
@@ -176,7 +179,7 @@ def plot_sigma(fits, opts):
 ##
 #  Plot mass-function.
 #
-#  @param[in] hm_matrix: Histograms of mock
+#  @param[in] mass_hist: Histograms of mock
 #  halo masses.
 #  @param[in] matrix: Mass-observable matrix.
 #  @param[in] x_range: X-axis data.

@@ -89,6 +89,7 @@ def r200_match(i, index, mock, obs):
 #  @param[in] mock: List of mock haloes.
 #  @param[in] obs: List of observed clusters.
 #  @param[in] dz: Redshift matching treshold.
+#  @param[in] opts: List of arguments.
 #
 #  @return Indices of mathces and corresponding
 #  weights of mock haloes to observed clusters.
@@ -125,6 +126,7 @@ def find_matches(mock, obs, dz, opts):
 #
 #  @param[in] mock: List of mock haloes.
 #  @param[in] obs: List of observed clusters.
+#  @param[in] matches: List of matches.
 #  @param[in] opts: List of arguments.
 #
 #  @return Mass-observable matrix, histogram

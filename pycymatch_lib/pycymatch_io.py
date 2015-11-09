@@ -134,6 +134,7 @@ def print_matrix(matrix, hm_matrix, ranges, opts):
 #  @param[in] mock: List of mock haloes.
 #  @param[in] obs: List of observed clusters.
 #  @param[in] index: List of indices of matches.
+#  @param[in] weights: List of match weights.
 #  @param[in] opts: List of arguments.
 #
 def print_matches(mock, obs, index, weights, opts):
