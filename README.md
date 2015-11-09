@@ -131,7 +131,7 @@ Help and a list of arguments are provided with the `--help` option e.g:
 
 **Example**
 
-To find matches from the Euclid Cluster Finder Challenges with version 4:
+To find matches with dz = 0.05 with version 4:
 
 > \>\> python pycymatch_v4.py -c DETECTIONS_FILE -m MOCK_FILE -z 0.05
 
