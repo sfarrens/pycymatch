@@ -95,9 +95,9 @@ Both codes output the following plots:
 * Completeness vs. Ngal (halo) and redshift.
 * Purity vs. Ngal (detection) and redshift.
 
-![Example Figure1](figures/completeness_mass_plot.png "Example Figure")
+![Example Figure1](figures/completeness_mass_plot.jpg "Example Figure")
 
-![Example Figure2](figures/purity_plot.png "Example Figure")
+![Example Figure2](figures/purity_plot.jpg "Example Figure")
 
 
 Additional version 4 outputs:
