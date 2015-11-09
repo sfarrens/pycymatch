@@ -95,7 +95,7 @@ Both codes output the following plots:
 * Completeness vs. Ngal (halo) and redshift.
 * Purity vs. Ngal (detection) and redshift.
 
-![alt text](https://github.com/sfarrens/pycymatch/tree/master/figures/completeness_mass_plot.jpg "Example Figure")
+![Example Figure](figures/completeness_mass_plot.jpg "Example Figure")
 
 Additional version 4 outputs:
 
