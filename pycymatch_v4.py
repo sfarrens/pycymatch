@@ -6,7 +6,7 @@
 # Samuel Farrens 2014 #
 #######################
 
-import sys, getopt, math, optparse, warnings, pycymatch_help as pch
+import sys, getopt, math, optparse, warnings, pycymatch_v4_help as pch
 import os.path
 from functions import astro, comp, errors
 import numpy as np, matplotlib as mp, scipy.stats as ss
