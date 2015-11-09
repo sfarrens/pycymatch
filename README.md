@@ -95,7 +95,10 @@ Both codes output the following plots:
 * Completeness vs. Ngal (halo) and redshift.
 * Purity vs. Ngal (detection) and redshift.
 
-![Example Figure](figures/completeness_mass_plot.jpg "Example Figure")
+![Example Figure1](figures/completeness_mass_plot.jpg "Example Figure")
+
+![Example Figure2](figures/purity_plot.jpg "Example Figure")
+
 
 Additional version 4 outputs:
 
@@ -129,7 +132,7 @@ Help and a list of arguments are provided with the `--help` option e.g:
 
 > \>\> python pycymatch_v5.py --help
 
-**Example**
+**Examples**
 
 To find matches with dz = 0.05 with version 4:
 
@@ -143,4 +146,13 @@ To find non-unique matches with version 5:
 
 > \>\> python pycymatch_v5.py -i DETECTIONS_FILE MOCK_FILE -z 0.05
 
-**NOTE: A full list of code options will be added in the future.**
+**Code Options**
+
+The following screenshots show the available options for both versions of the
+code.
+
+![V4 Figure](figures/v4_options.jpg "V4 options")
+
+![V% Figure](figures/v5_options.jpg "V5 5ptions")
+
+*NOTE: A full description of code options will be added in the future.*
