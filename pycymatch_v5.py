@@ -1,4 +1,4 @@
-#! /Users/sfarrens/Documents/Library/anaconda/bin/python
+#! /usr/bin/python
 
 #  @file pycymatch_v5.py
 #

@@ -1,4 +1,4 @@
-#! /Users/sfarrens/Documents/Library/anaconda/bin/python
+#! /usr/bin/python
 
 #######################
 #   PYCYMATCH V.4.0   #
