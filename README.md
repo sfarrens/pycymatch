@@ -133,9 +133,9 @@ To find non-unique matches with version 5:
 The following screenshots show the available options for both versions of the
 code.
 
-<img src=figures/v4_options.jpg width=400>
+<img src=figures/v4_options.jpg width=500>
 
-<img src=figures/v5_options.jpg width=400>
+<img src=figures/v5_options.jpg width=500>
 
 *NOTE: A full description of code options will be added in the future.*
 
@@ -151,19 +151,19 @@ Both versions of the code output the following plots:
 
 *e.g.*
 
-<img src=figures/completeness_mass_plot.jpg width=400>
+<img src=figures/completeness_mass_plot.jpg width=500>
 
 * **Completeness vs. Ngal (halo) and redshift:** A 2D plot of the completeness `(N_Matches/N_Haloes)` in bins of halo Ngal (number of galaxy members in the halo) and redshift.
 
 *e.g.*
 
-<img src=figures/completeness_ngal_plot.jpg width=400>
+<img src=figures/completeness_ngal_plot.jpg width=500>
 
 * **Purity vs. Ngal (detection) and redshift:** A 2D plot of the purity `(N_Matches/N_Detections)` in bins of detection Ngal (number of galaxy members in the detection) and redshift.
 
 *e.g.*
 
-<img src=figures/purity_plot.jpg width=400>
+<img src=figures/purity_plot.jpg width=500>
 
 ### Additional Version 4 Outputs
 
@@ -173,13 +173,13 @@ Plots not included in version 5:
 
 *e.g.*
 
-<img src=figures/sn_plot.jpg width=400>
+<img src=figures/sn_plot.jpg width=500>
 
 * **Spearman's rank order correlation coefficient vs. redshift:** A nonparametric measure of the correlation between the halo mass and the detection observable mass proxy.
 
 *e.g.*
 
-<img src=figures/spear_plot.jpg width=400>
+<img src=figures/spear_plot.jpg width=500>
 
 Version 4 also outputs the following text files with the matches between mock haloes and detections:
 
@@ -194,19 +194,19 @@ New plots provided in version 5:
 
 *e.g.*
 
-<img src=figures/mass_obs_plot.jpg width=400>
+<img src=figures/mass_obs_plot.jpg width=500>
 
 * **Histograms of halo mass in bins of redshift:** A set of histograms (one for each redshift bin) of the halo mass (blue solid line) and the corresponding matched detections (red dashed line).
 
 *e.g.*
 
-<img src=figures/mass_func_plot.jpg width=400>
+<img src=figures/mass_func_plot.jpg width=500>
 
 * **Histograms of lambda in bins of mass and redshift.** A set of histograms (one for each mass and redshift bin) of the mass observable lambda (blue solid line) and a gaussian fit (red dashed line).
 
 *e.g.*
 
-<img src=figures/nlambda_plot.jpg width=400>
+<img src=figures/nlambda_plot.jpg width=500>
 
 Version 5 outputs the following text files that differ from version 4:
 
