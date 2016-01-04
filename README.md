@@ -140,8 +140,7 @@ code.
 *NOTE: A full description of code options will be added in the future.*
 
 <a name="out_anchor"></a>
-Output
-------------
+# Output
 
 ### Basic Outputs
 
@@ -212,3 +211,17 @@ Version 5 outputs the following text files that differ from version 4:
 
 * A list of matched haloes and corresponding detections.
 * Mass-observable matrices in bins of redshift (*i.e.* the data required to reproduce all of the plots.)
+
+<a name="trb_anchor"></a>
+# Troubleshooting
+
+### General
+
+* Make sure that both of the input files contain all of the required columns with the correct units.
+* Make sure that the input file columns are in the default order or that the appropriate options have been used to adjust the input order.
+
+### Version 5 Specific
+
+* Make sure that the observed detections file and then the mock halo file are provided following the `--i` option.
+* Make sure that the default bin ranges (*e.g.* mass bins, redshift bins or Ngal bins) cover the full extent of the input data. For example, the default redshift range is `0<=z<=3.0` and if the input contains an object with `z=3.2` it will cause problems.
+* Make sure to use the `--u` option to obtain unique matches.
