@@ -8,8 +8,10 @@ Contents
 1. [Introduction](#intro_anchor)
 2. [Dependenies](#depend_anchor)
 3. [Input](#in_anchor)
-3. [Execution](#exe_anchor)
-4. [Output](#out_anchor)
+4. [Execution](#exe_anchor)
+5. [Output](#out_anchor)
+6. [Troubleshooting](#trb_anchor)
+
 
 <a name="intro_anchor"></a>
 # Introduction
