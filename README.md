@@ -67,30 +67,30 @@ The column values required for each of these files are described in the followin
 For the mock halo catalogue the codes expect to find the following properties
 in the following order:
 
-1. ID:`(A unique string of numbers and/or characters to identify the halo)`
-2. Central Galaxy Flag: `(A boolean, i.e. 0 or 1)`
-3. RA: `(The halo Right Ascension in degrees)`
-4. Dec: `(The halo Declination in degrees)`
-5. z: `(The halo redshift)`
-6. Ngal: `(The number of galaxy members in the halo)`
-7. Mass: `(Log10 of the halo mass)`
-8. R200: `(R200 of the halo in arcminutes)`
-9. Min RA: `(Minimum halo member RA)`
-10. Max RA: `(Maximum halo member RA)`
-11. Min Dec: `(Minimum halo member Dec)`
-12. Max Dec: `(Maximum halo member Dec)`
+1. **ID** : `(A unique string of numbers and/or characters to identify the halo)`
+2. **Central Galaxy Flag** : `(A boolean, i.e. 0 or 1)`
+3. **RA** : `(The halo Right Ascension in degrees)`
+4. **Dec** : `(The halo Declination in degrees)`
+5. **z** : `(The halo redshift)`
+6. **Ngal** : `(The number of galaxy members in the halo)`
+7. **Mass** : `(Log10 of the halo mass)`
+8. **R200** : `(R200 of the halo in arcminutes)`
+9. **Min RA** : `(Minimum halo member RA)`
+10. **Max RA** : `(Maximum halo member RA)`
+11. **Min Dec** : `(Minimum halo member Dec)`
+12. **Max Dec** : `(Maximum halo member Dec)`
 
 ### Cluster Detection Catalogue Format
 
 For the detection catalogue the codes expect to find the following properties
 in the following order:
 
-1. ID:`(A unique string of numbers and/or characters to identify the cluster)`
-2. RA: `(The cluster Right Ascension in degrees)`
-3. Dec: `(The cluster Declination in degrees)`
-4. z: `(The cluster redshift)`
-5. Ngal: `(The number of galaxy members in the cluster)`
-6. SNR: `(The signal-to-noise ratio of the cluster)`
+1. **ID** : `(A unique string of numbers and/or characters to identify the cluster)`
+2. **RA** : `(The cluster Right Ascension in degrees)`
+3. **Dec** : `(The cluster Declination in degrees)`
+4. **z** : `(The cluster redshift)`
+5. **Ngal** : `(The number of galaxy members in the cluster)`
+6. **SNR** : `(The signal-to-noise ratio of the cluster)`
 
 <a name="exe_anchor"></a>
 # Execution
@@ -147,60 +147,60 @@ Output
 
 Both versions of the code output the following plots:
 
-* **Completeness vs. mass and redshift.**
+* **Completeness vs. mass and redshift:** A 2D plot of the completeness `(N_Matches/N_Haloes)` in bins of halo mass and redshift.
 
-e.g.
+*e.g.*
 <img src=figures/completeness_mass_plot.jpg width=400>
 
-* **Completeness vs. Ngal (halo) and redshift.**
+* **Completeness vs. Ngal (halo) and redshift:** A 2D plot of the completeness `(N_Matches/N_Haloes)` in bins of halo Ngal (number of galaxy members in the halo) and redshift.
 
-e.g.
+*e.g.*
 <img src=figures/completeness_ngal_plot.jpg width=400>
 
-* **Purity vs. Ngal (detection) and redshift.**
+* **Purity vs. Ngal (detection) and redshift:** A 2D plot of the purity `(N_Matches/N_Detections)` in bins of detection Ngal (number of galaxy members in the detection) and redshift.
 
-e.g.
+*e.g.*
 <img src=figures/purity_plot.jpg width=400>
 
 ### Additional Version 4 Outputs
 
 Plots not included in version 5:
 
-* **SNR vs. mass and redshift.**
+* **SNR vs. mass and redshift:** A 2D plot of the signal-to-noise ratio of the detections in bins of halo mass and redshift.
 
-e.g.
+*e.g.*
 <img src=figures/sn_plot.jpg width=400>
 
-* **Spearman's rank order correlation coefficient vs. redshift.**
+* **Spearman's rank order correlation coefficient vs. redshift:** A nonparametric measure of the correlation between the halo mass and the detection observable mass proxy.
 
-e.g.
+*e.g.*
 <img src=figures/spear_plot.jpg width=400>
 
 Version 4 also outputs the following text files with the matches between mock haloes and detections:
 
-* List of all mock haloes and corresponding detection matches.
-* List of all detections and corresponding halo matches.
+* A list of all mock haloes and corresponding detection matches.
+* A list of all detections and corresponding halo matches.
 
 ### Additional Version 5 Outputs
 
 New plots provided in version 5:
 
-* **Cluster mass observable (lambda) vs. halo mass in bins of redshift.**
+* **Cluster mass observable (lambda) vs. halo mass in bins of redshift:** A set of 2D histograms (one for each redshift bin) in bins of lambda and halo mass.
 
-e.g.
+*e.g.*
 <img src=figures/mass_obs_plot.jpg width=400>
 
-* **Histograms of halo mass in bins of redshift.**
+* **Histograms of halo mass in bins of redshift:** A set of histograms (one for each redshift bin) of the halo mass (blue solid line) and the corresponding matched detections (red dashed line).
 
-e.g.
+*e.g.*
 <img src=figures/mass_func_plot.jpg width=400>
 
-* **Histograms of lambda in bins of mass and redshift.**
+* **Histograms of lambda in bins of mass and redshift.** A set of histograms (one for each mass and redshift bin) of the mass observable lambda (blue solid line) and a gaussian fit (red dashed line).
 
-e.g.
+*e.g.*
 <img src=figures/nlambda_plot.jpg width=400>
 
 Version 5 outputs the following text files that differ from version 4:
 
-* Mass-observable matrices in bins of redshift.
-* List of matched haloes and corresponding detections.
+* A list of matched haloes and corresponding detections.
+* Mass-observable matrices in bins of redshift (*i.e.* the data required to reproduce all of the plots.)
