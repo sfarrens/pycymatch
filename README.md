@@ -145,23 +145,24 @@ Output
 
 ### Basic Outputs
 
-This is a test...
-
 Both versions of the code output the following plots:
 
 * **Completeness vs. mass and redshift:** A 2D plot of the completeness `(N_Matches/N_Haloes)` in bins of halo mass and redshift.
 
 *e.g.*
+
 <img src=figures/completeness_mass_plot.jpg width=400>
 
 * **Completeness vs. Ngal (halo) and redshift:** A 2D plot of the completeness `(N_Matches/N_Haloes)` in bins of halo Ngal (number of galaxy members in the halo) and redshift.
 
 *e.g.*
+
 <img src=figures/completeness_ngal_plot.jpg width=400>
 
 * **Purity vs. Ngal (detection) and redshift:** A 2D plot of the purity `(N_Matches/N_Detections)` in bins of detection Ngal (number of galaxy members in the detection) and redshift.
 
 *e.g.*
+
 <img src=figures/purity_plot.jpg width=400>
 
 ### Additional Version 4 Outputs
@@ -171,11 +172,13 @@ Plots not included in version 5:
 * **SNR vs. mass and redshift:** A 2D plot of the signal-to-noise ratio of the detections in bins of halo mass and redshift.
 
 *e.g.*
+
 <img src=figures/sn_plot.jpg width=400>
 
 * **Spearman's rank order correlation coefficient vs. redshift:** A nonparametric measure of the correlation between the halo mass and the detection observable mass proxy.
 
 *e.g.*
+
 <img src=figures/spear_plot.jpg width=400>
 
 Version 4 also outputs the following text files with the matches between mock haloes and detections:
@@ -190,16 +193,19 @@ New plots provided in version 5:
 * **Cluster mass observable (lambda) vs. halo mass in bins of redshift:** A set of 2D histograms (one for each redshift bin) in bins of lambda and halo mass.
 
 *e.g.*
+
 <img src=figures/mass_obs_plot.jpg width=400>
 
 * **Histograms of halo mass in bins of redshift:** A set of histograms (one for each redshift bin) of the halo mass (blue solid line) and the corresponding matched detections (red dashed line).
 
 *e.g.*
+
 <img src=figures/mass_func_plot.jpg width=400>
 
 * **Histograms of lambda in bins of mass and redshift.** A set of histograms (one for each mass and redshift bin) of the mass observable lambda (blue solid line) and a gaussian fit (red dashed line).
 
 *e.g.*
+
 <img src=figures/nlambda_plot.jpg width=400>
 
 Version 5 outputs the following text files that differ from version 4:
