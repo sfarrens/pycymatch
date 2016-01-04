@@ -1,17 +1,19 @@
 PYCYMATCH
 ==================
 
-@author Samuel Farrens
+Author: Samuel Farrens  
 
 Contents
 ------------
 1. [Introduction](#intro_anchor)
 2. [Dependenies](#depend_anchor)
+3. [Input](#in_anchor)
 3. [Execution](#exe_anchor)
+4. [Output](#out_anchor)
 
 <a name="intro_anchor"></a>
-Introduction
-------------
+# Introduction
+
 Pycymatch (versions 4 & 5) is a cylindrical matching code for identifying
 matches between a catalogue of simulated dark matter haloes populated with
 galaxies and the results of a cluster detection algorithm run on said
@@ -38,8 +40,7 @@ docs folder. Additionally, version 5 and all its dependencies adhere to PEP8
 style guidelines.
 
 <a name="depend_anchor"></a>
-Dependencies
-------------
+# Dependencies
 
 The code requires the following Python packages:
 
@@ -49,18 +50,19 @@ The code requires the following Python packages:
 
 * <a href="http://matplotlib.org/" target="_blank">Matplotlib</a>
 
-<a name="exe_anchor"></a>
-Execution
-------------
+<a name="in_anchor"></a>
+# Input
 
-**Input Format**
+### Input Files
 
-The expected inputs for both versions of the code are two ASCII files:
+The expected inputs for both versions of the code are the following two files (in ASCII):
 
 1. The mock halo catalogue.
 2. A catalogue of cluster detections.
 
-*Mock Halo Catalogue Format:*
+The column values required for each of these files are described in the following subsections. Note, however, that the order of the properties provided are the code defaults. If needed the order can be altered using the code options described further down.
+
+### Mock Halo Catalogue Format
 
 For the mock halo catalogue the codes expect to find the following properties
 in the following order:
@@ -78,7 +80,7 @@ in the following order:
 11. Min Dec: `(Minimum halo member Dec)`
 12. Max Dec: `(Maximum halo member Dec)`
 
-*Cluster Detection Catalogue Format:*
+### Cluster Detection Catalogue Format
 
 For the detection catalogue the codes expect to find the following properties
 in the following order:
@@ -90,35 +92,10 @@ in the following order:
 5. Ngal: `(The number of galaxy members in the cluster)`
 6. SNR: `(The signal-to-noise ratio of the cluster)`
 
-**Outputs**
+<a name="exe_anchor"></a>
+# Execution
 
-Both codes output the following plots:
-
-* Completeness vs. mass and redshift.
-* Completeness vs. Ngal (halo) and redshift.
-* Purity vs. Ngal (detection) and redshift.
-
-![Example Figure1](figures/completeness_mass_plot.jpg "Example Figure")
-
-![Example Figure2](figures/purity_plot.jpg "Example Figure")
-
-
-Additional version 4 outputs:
-
-* SNR vs. mass and redshift.
-* Spearman's rank order correlation coefficient vs. redshift.
-* List of all mock haloes and corresponding detection matches.
-* List of all detections and corresponding halo matches.
-
-Additional version 5 outputs:
-
-* Cluster mass observable (lambda) vs. mass in bins of redshift.
-* Histograms of mass in bins of redshift.
-* Histograms of lambda in bins of mass and redshift.
-* Mass-observable matrices in bins of redshift.
-* List of matched haloes and corresponding detections.
-
-**Running the Codes**
+### Running the Codes
 
 The codes can be run as executables by changing the file permissions
 and specifying the path to Python (this is first line of the
@@ -127,7 +104,9 @@ e.g.:
 
 > \>\> chmod +x pycymatch_v5.py
 
-Otherwise to run the code symply run Python e.g:
+> \>\> pycymatch_v5.py
+
+Otherwise to run the code symply run with Python e.g:
 
 > \>\> python pycymatch_v5.py
 
@@ -135,7 +114,7 @@ Help and a list of arguments are provided with the `--help` option e.g:
 
 > \>\> python pycymatch_v5.py --help
 
-**Examples**
+### Examples
 
 To find matches with dz = 0.05 with version 4:
 
@@ -149,13 +128,79 @@ To find non-unique matches with version 5:
 
 > \>\> python pycymatch_v5.py -i DETECTIONS_FILE MOCK_FILE -z 0.05
 
-**Code Options**
+### Code Options
 
 The following screenshots show the available options for both versions of the
 code.
 
-![V4 Figure](figures/v4_options.jpg "V4 options")
+<img src=figures/v4_options.jpg width=400>
 
-![V% Figure](figures/v5_options.jpg "V5 5ptions")
+<img src=figures/v5_options.jpg width=400>
 
 *NOTE: A full description of code options will be added in the future.*
+
+<a name="out_anchor"></a>
+Output
+------------
+
+### Basic Outputs
+
+Both versions of the code output the following plots:
+
+* **Completeness vs. mass and redshift.**
+
+e.g.
+<img src=figures/completeness_mass_plot.jpg width=400>
+
+* **Completeness vs. Ngal (halo) and redshift.**
+
+e.g.
+<img src=figures/completeness_ngal_plot.jpg width=400>
+
+* **Purity vs. Ngal (detection) and redshift.**
+
+e.g.
+<img src=figures/purity_plot.jpg width=400>
+
+### Additional Version 4 Outputs
+
+Plots not included in version 5:
+
+* **SNR vs. mass and redshift.**
+
+e.g.
+<img src=figures/sn_plot.jpg width=400>
+
+* **Spearman's rank order correlation coefficient vs. redshift.**
+
+e.g.
+<img src=figures/spear_plot.jpg width=400>
+
+Version 4 also outputs the following text files with the matches between mock haloes and detections:
+
+* List of all mock haloes and corresponding detection matches.
+* List of all detections and corresponding halo matches.
+
+### Additional Version 5 Outputs
+
+New plots provided in version 5:
+
+* **Cluster mass observable (lambda) vs. halo mass in bins of redshift.**
+
+e.g.
+<img src=figures/mass_obs_plot.jpg width=400>
+
+* **Histograms of halo mass in bins of redshift.**
+
+e.g.
+<img src=figures/mass_func_plot.jpg width=400>
+
+* **Histograms of lambda in bins of mass and redshift.**
+
+e.g.
+<img src=figures/nlambda_plot.jpg width=400>
+
+Version 5 outputs the following text files that differ from version 4:
+
+* Mass-observable matrices in bins of redshift.
+* List of matched haloes and corresponding detections.
