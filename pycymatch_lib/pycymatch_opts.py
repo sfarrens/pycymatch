@@ -34,23 +34,28 @@ def get_opts():
                         '2-Mock Haloes)')
 
     parser.add_argument('-z', '--delta_z', dest='delta_z', default=0.03,
-                        type=float, help='Delta_z value. [Default: 0.03]')
+                        type=float, help='Photometric redshift error value. ' +
+                        '[Default: 0.03]')
 
     parser.add_argument('--proxy_bin', dest='proxy_bin',
                         default=[0.0, 3.5, 0.2], nargs='+', type=float,
-                        help='Mass proxy bin values. [Default: 0.0, 3.5, 0.2]')
+                        help='Mass proxy bin values: Min proxy, Max proxy, '+
+                        'proxy bin size [Default: 0.0 3.5 0.2]')
 
     parser.add_argument('--ngal_bin', dest='ngal_bin', default=[0.0, 3.5, 0.2],
-                        nargs='+', type=float, help='Halo Ngal bin values. ' +
-                        '[Default: 0.0, 3.5, 0.2]')
+                        nargs='+', type=float, help='Halo Ngal bin values: ' +
+                        'Min Ngal, Max Ngal, Ngal bin size ' +
+                        '[Default: 0.0 3.5 0.2]')
 
     parser.add_argument('--mass_bin', dest='mass_bin',
                         default=[13.0, 15.5, 0.1], nargs='+', type=float,
-                        help='Mass bin values. [Default: 13.0, 15.5, 0.1]')
+                        help='Mass bin values: Min mass, Max mass, mass ' +
+                        'bin size [Default: 13.0 15.5 0.1]')
 
     parser.add_argument('--z_bin', dest='z_bin', default=[0.0, 3.0, 0.1],
                         nargs='+', type=float, help='Redshift bin ' +
-                        'values. [Default: 0.0, 3.0, 0.1]')
+                        'values: Min z, Max z, z bin size ' +
+                        '[Default: 0.0 3.0 0.1]')
 
     parser.add_argument('--mock_plots', action='store_true',
                         dest='make_mock_plots', help='Output plots of ' +
