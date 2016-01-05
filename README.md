@@ -46,7 +46,7 @@ style guidelines.
 
 The code requires the following Python packages:
 
-* <a href="http://www.numpy.org/" target="_blank">Numpy</a>
+* <a href="http://www.numpy.org/" target="_blank">Numpy</a> (version 1.7 or greater)
 
 * <a href="http://www.scipy.org/" target="_blank">SciPy</a>
 
@@ -126,9 +126,9 @@ To find unique matches with version 5:
 
 > \>\> python pycymatch_v5.py -i DETECTIONS_FILE MOCK_FILE -z 0.05 -u
 
-To find non-unique matches with version 5:
+To find non-unique matches with version 5 within 0.1<=z<2.6 and bin size 0.3:
 
-> \>\> python pycymatch_v5.py -i DETECTIONS_FILE MOCK_FILE -z 0.05
+> \>\> python pycymatch_v5.py -i DETECTIONS_FILE MOCK_FILE -z 0.05 --z_bin 0.1 2.6 0.3
 
 ### Code Options
 
