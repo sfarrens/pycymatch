@@ -1,10 +1,14 @@
-PYCYMATCH
-==================
+# PYCYMATCH
 
-Author: Samuel Farrens  
+> Author: **Samuel Farrens**
 
-Contents
-------------
+> Year: **2016**
+
+> Version: **4.0, 5.0**
+
+> Email: **[samuel.farrens@gmail.com](mailto:samuel.farrens@gmail.com)**
+
+## Contents
 1. [Introduction](#intro_anchor)
 1. [Method](#method_anchor)
 1. [Dependenies](#depend_anchor)
