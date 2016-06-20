@@ -15,7 +15,7 @@ Contents
 
 
 <a name="intro_anchor"></a>
-# Introduction
+## Introduction
 
 Pycymatch (versions 4 & 5) is a cylindrical matching code for identifying
 matches between a catalogue of simulated dark matter haloes populated with
@@ -43,11 +43,11 @@ docs folder. Additionally, version 5 and all its dependencies adhere to PEP8
 style guidelines.
 
 <a name="method_anchor"></a>
-# Method
+## Method
 
 This section describes the cylindrical matching method in both versions (4 & 5) of Pycymatch.
 
-## Version 4
+### Version 4
 
 This version of the code uses the following procedure for determining matches between mock haloes and detected clusters:
 
@@ -63,7 +63,7 @@ This version of the code uses the following procedure for determining matches be
 * Completeness is measured as $N_{matches}/N_{haloes}$.
 * Purity is measured as $N_{matches}/N_{detections}$.
 
-## Version 5
+### Version 5
 
 This version of the code implements some minor modifications with respect to the previous version.
 
@@ -76,7 +76,7 @@ This version of the code implements some minor modifications with respect to the
 * Completeness and purity are measured in the same way.
 
 <a name="depend_anchor"></a>
-# Dependencies
+## Dependencies
 
 The code requires the following Python packages:
 
@@ -87,7 +87,7 @@ The code requires the following Python packages:
 * <a href="http://matplotlib.org/" target="_blank">Matplotlib</a>
 
 <a name="in_anchor"></a>
-# Input
+## Input
 
 ### Input Files
 
@@ -129,7 +129,7 @@ in the following order:
 6. **SNR** : `(The signal-to-noise ratio of the cluster)`
 
 <a name="exe_anchor"></a>
-# Execution
+## Execution
 
 ### Running the Codes
 
