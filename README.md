@@ -58,7 +58,7 @@ This version of the code uses the following procedure for determining matches be
  * The maximum extent (max RA/Dec) set by the galaxy member farthest from the halo centre.
  * The line-of-sight limit set by *2 x sigma_z(1 + z)*, where *sigma_z* is the photometric redshift error of the mock halo catalogue.
 * For each halo (starting with the highest ranked) a search is performed for the highest ranked detection within the matching threshold region.
-* Only unique matches are permitted. In the case of multiple detections with equal rank the object closest to the halo centre is choses as the match.
+* Only unique matches are permitted. In the case of multiple detections with equal rank the object closest to the halo centre is chosen as the match.
 * All unmatched detections count as impurities.
 * Completeness is measured as *N_matches/N_haloes*.
 * Purity is measured as *N_matches/N_detections*.
