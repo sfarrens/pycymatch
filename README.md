@@ -51,17 +51,17 @@ This section describes the cylindrical matching method in both versions (4 & 5) 
 
 This version of the code uses the following procedure for determining matches between mock haloes and detected clusters:
 
-* The mock halo catalogue is rank ordered by $N_{gal}$ (the number of galaxy members contained within the cluster/halo).
-* The detected cluster catalogue is rank ordered by $\lambda_{obs}$ (the observed mass proxy, which can also be $N_{gal}$).
+* The mock halo catalogue is rank ordered by *N_gal* (the number of galaxy members contained within the cluster/halo).
+* The detected cluster catalogue is rank ordered by *lambda_obs* (the observed mass proxy, which can also be *N_gal*).
 * For each mock halo a matching threshold region is defined around the halo centre using the following criteria:
- * The radial limit set by the $R_{200}$ of the mock halo.
+ * The radial limit set by the *R_200* of the mock halo.
  * The maximum extent (max RA/Dec) set by the galaxy member farthest from the halo centre.
- * The line-of-sight limit set by $2 * \sigma_z(1 + z)$, where $\sigma_z$ is the photometric redshift error of the mock halo catalogue.
+ * The line-of-sight limit set by *2 x sigma_z(1 + z)*, where *sigma_z* is the photometric redshift error of the mock halo catalogue.
 * For each halo (starting with the highest ranked) a search is performed for the highest ranked detection within the matching threshold region.
 * Only unique matches are permitted. In the case of multiple detections with equal rank the object closest to the halo centre is choses as the match.
 * All unmatched detections count as impurities.
-* Completeness is measured as $N_{matches}/N_{haloes}$.
-* Purity is measured as $N_{matches}/N_{detections}$.
+* Completeness is measured as *N_matches/N_haloes*.
+* Purity is measured as *N_matches/N_detections*.
 
 ### Version 5
 
@@ -70,9 +70,9 @@ This version of the code implements some minor modifications with respect to the
 * The input catalogues are no longer rank ordered.
 * The same matching threshold region is used.
 * For each halo a list of all detections within the matching threshold region is found.
-* Each match is assigned a weight $w = 1 - (d_{proj}/R_{200})$, where $d_{proj}$ is the projected distance between the halo and the detection. (Note that more sophisticated weights could be implemented)
+* Each match is assigned a weight *w = 1 - (d_proj/R_200)*, where *d_proj* is the projected distance between the halo and the detection. (Note that more sophisticated weights could be implemented)
 * For unique matching only the match with the highest weight is kept. In this case the results are identical to those of version 4.
-* For non-unique matching the weights can be used to make a probability distribution of $\lambda_{obs}$ for the mass of the halo.
+* For non-unique matching the weights can be used to make a probability distribution of *lambda_obs* for the mass of the halo.
 * Completeness and purity are measured in the same way.
 
 <a name="depend_anchor"></a>
